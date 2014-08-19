@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(http://fonts.gstatic.com/s/karla/v4/JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2) format('woff2'), url(http://fonts.gstatic.com/s/karla/v4/QT0qO2FiFD03cwUe_t62t6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Karla Bold'), local('Karla-Bold'), url(http://fonts.gstatic.com/s/karla/v4/suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/karla/v4/3nZS3BKzlvhkwl4yjCQcjHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: Karla, Helvetica, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-animation: fadeIn 1.25s both 0.5s;
+     -moz-animation: fadeIn 1.25s both 0.5s;
+       -o-animation: fadeIn 1.25s both 0.5s;
+          animation: fadeIn 1.25s both 0.5s;
+}
+
+article {
+  max-width: 460px;
+  margin-top: 144px;
+  padding: 0 80px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.3333333333333;
+  margin: 0;
+}
