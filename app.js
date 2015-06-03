@@ -20,7 +20,7 @@
   	var b = sin(pi * (h + 2/3));
   	return [r, g, b].map(function (c) {
   		c = c*c;
-  		c = 0.85 + (c*0.15); // HURRRR
+  		c = 0.85 + (c*0.15);
   		return floor(c * 255);
   	});
   }
