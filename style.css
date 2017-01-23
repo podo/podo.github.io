@@ -1,15 +1,19 @@
 @font-face {
-  font-family: 'Karla';
-  font-style: normal;
+  font-family: 'Maison Neue';
+  src: url('fonts/maison-neue-light.eot');
+  src: url('fonts/maison-neue-light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/maison-neue-light.woff') format('woff'),
+       url('fonts/maison-neue-light.ttf') format('truetype');
   font-weight: 400;
-  src: local('Karla'), local('Karla-Regular'), url(http://fonts.gstatic.com/s/karla/v4/JaMH4jmmzP070-OYo03anaCWcynf_cDxXwCLxiixG1c.woff2) format('woff2'), url(http://fonts.gstatic.com/s/karla/v4/QT0qO2FiFD03cwUe_t62t6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Karla Bold'), local('Karla-Bold'), url(http://fonts.gstatic.com/s/karla/v4/suoMYBGv5sGCUIrF9mVTfXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/karla/v4/3nZS3BKzlvhkwl4yjCQcjHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+  font-family: 'Maison Neue';
+  src: url('fonts/maison-neue-medium.eot');
+  src: url('fonts/maison-neue-medium.eot?#iefix') format('embedded-opentype'),
+       url('fonts/maison-neue-medium.woff') format('woff'),
+       url('fonts/maison-neue-medium.ttf') format('truetype');
+  font-weight: 500;
 }
 
 @-webkit-keyframes fadeIn {
@@ -60,40 +64,69 @@
   }
 }
 
-body {
-  font-family: "San Francisco Text", Karla, Helvetica, sans-serif;
-  max-width: 960px;
-  margin: 0 auto;
-  color: rgba(0, 0, 0, 0.8);
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-article {
-  max-width: 520px;
-  margin-top: 144px;
-  padding: 0 80px;
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Maison Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.3333333333333;
+  letter-spacing: -0.3;
 }
 
 @media all and (max-width: 639px) {
-  article {
-    padding: 0 20px;
+  body {
+    padding: 50px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-animation: fadeIn 1.25s both 0.5s;
-     -moz-animation: fadeIn 1.25s both 0.5s;
-       -o-animation: fadeIn 1.25s both 0.5s;
-          animation: fadeIn 1.25s both 0.5s;
+p {
+  max-width: 560px;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.3333333333333;
-  margin: 0;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  float: left;
+  margin-right: 16px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+article {
+  width: 100%;
+  align-self: flex-end;
+  -webkit-animation: fadeIn 1.5s both 0.5s;
+     -moz-animation: fadeIn 1.5s both 0.5s;
+       -o-animation: fadeIn 1.5s both 0.5s;
+          animation: fadeIn 1.5s both 0.5s;
+}
+
+footer {
+  width: 100%;
+  align-self: flex-end;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5;
   -webkit-animation: fadeIn 1.25s both 1s;
      -moz-animation: fadeIn 1.25s both 1s;
        -o-animation: fadeIn 1.25s both 1s;
@@ -103,7 +136,7 @@ p {
 a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.0625);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.25s ease-in-out;
      -moz-transition: all 0.25s ease-in-out;
       -ms-transition: all 0.25s ease-in-out;
@@ -112,7 +145,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.25s ease-in-out;
      -moz-transition: all 0.25s ease-in-out;
       -ms-transition: all 0.25s ease-in-out;

@@ -28,7 +28,7 @@
   function recolor(plus) {
   	var cycle = ((epoch()/75) + plus) % 1;
   	var color = K(cycle);
-  	color = 'rgb(' + color.join(',') + ')';
+  	color = 'rgba(' + color.join(',') + ', 0.5)';
   	$('body').css({'background-color': color});
   }
 
