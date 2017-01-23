@@ -86,7 +86,7 @@ body {
 
 @media all and (max-width: 639px) {
   body {
-    padding: 50px;
+    padding: 40px;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -104,6 +104,12 @@ ul {
 li {
   float: left;
   margin-right: 16px;
+}
+
+@media all and (max-width: 639px) {
+  li {
+    margin-right: 12px;
+  }
 }
 
 strong {
