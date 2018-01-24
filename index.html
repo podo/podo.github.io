@@ -4,24 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="app.js"></script>
   </head>
   <body>
     <article>
       <p>
-        <strong>Giedrius Jaloveckas</strong> is an interdisciplinary designer and front-end developer based in Vilnius, Lithuania and currently working at Wix.
+        <strong>Giedrius Jaloveckas</strong> — I’m an interdisciplinary designer and developer, who’s in love with the intersection between technologies
+        and design.
+      </p>
+      <p>
+        Over past nine years, I had a pleasure to work for several <a href="https://www.vinted.com" target="_blank">well-know<span class="tooltip">Vinted</span></span></a> <a href="https://www.trafi.com" target="_blank">startups<span class="tooltip">Trafi</span></a> and <a href="http://www.jumsoft.com" target="_blank">companies<span class="tooltip">Jumsoft</span></a>, where I lead both
+        design and front-end development, <a href="http://ui.vinted.net" target="_blank">built design systems<span class="tooltip">ui.vinted.net</span></a> and helped <a href="https://twitter.com/TrafiApp/status/912627286658174976" target="_blank">rebrand the products <span class="tooltip">twitter.com/trafi/912627286658174976</span></a>.
+      </p>
+      <p>
+        At the moment, I’m working as a Product
+        Designer for <a href="https://www.wix.com/code" target="_blank">Wix Code<span class="tooltip">wix.com/code</span></a>, while mainly focusing on the future of design tools, design systems and augmentation of human creativity.
+      </p>
+      <p>
+        I'm always looking for interesting projects, collaborations or just conversations, so drop me <a href="mailto:g.jaloveckas@gmail.com" target="_blank">an e-mail<span class="tooltip">g.jaloveckas@gmail.com</span></a> or <a href="http://www.twitter.com/podo" target="_blank">a tweet<span class="tooltip">twitter.com/podo</span></a>.
       </p>
     </article>
-
+    
     <footer>
-      <ul>
-        <li><a href="mailto:g.jaloveckas@gmail.com">Mail</a></li>
-        <li><a href="https://twitter.com/podo" target="_blank">Twitter</a></li>
-        <li><a href="https://dribbble.com/podo" target="_blank">Dribbble</a></li>
-        <li><a href="https://github.com/podo" target="_blank">Github</a></li>
-      </ul>
+      Copyright — 2018
     </footer>
+    <script>
+      var tooltip = document.querySelectorAll('.tooltip');
+      var classes = ['green', 'dark_green', 'blue', 'purple', 'pink', 'grey', 'dark_grey'];
+
+      document.addEventListener('mousemove', fn, false);
+
+      function fn(event) {
+        for (var i = tooltip.length; i--;) {
+          tooltip[i].style.left = event.pageX + 4 + 'px';
+          tooltip[i].style.top = event.pageY - 30 + 'px';
+        }
+      }
+
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      
+      randomClass = classes[getRandomInt(0, classes.length - 1)];
+      document.body.className = randomClass;
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
