@@ -34,7 +34,7 @@
             grayscale(100%)
             saturate(20%);
   }
-  
+
   100% {
     filter: opacity(100%)
             grayscale(0%)
@@ -527,7 +527,12 @@ a:hover .tooltip {
 	text-align: center;
 	top: 0;
 	left: 0;
-	background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+       -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 }
 
 .lightbox img {
