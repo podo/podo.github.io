@@ -54,10 +54,10 @@ body {
   margin: 0 auto;
   padding: 96px;
   background-color: #EDECF2;
-  color: rgba(0, 0, 0, 0.96);
+  color: rgba(0, 0, 0, 0.92);
   font-family: "SF UI Display", Helvetica, sans-serif;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 body.green {
@@ -291,7 +291,7 @@ h2 {
   font-size: 20px;
   line-height: 1.4;
   font-weight: 500;
-  padding-top: 72px;
+  padding-top: 96px;
   margin-bottom: 24px;
 }
 
