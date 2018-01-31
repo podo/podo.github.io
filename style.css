@@ -110,8 +110,16 @@ p {
   margin-bottom: 24px;
 }
 
-p:last-of-type {
-  margin-bottom: 0;
+blockquote {
+  max-width: 620px;
+  font-size: 24px;
+  line-height: 1.4;
+  padding-left: 48px;
+  padding-right: 72px;
+  margin: 48px 0 0;
+  color: rgba(0, 0, 0, 0.48);
+  font-weight: 500;
+  font-style: italic;
 }
 
 img {
@@ -171,6 +179,10 @@ figure img {
   border-radius: 4px;
 }
 
+.image--medium {
+  max-width: 620px;
+}
+
 figure a,
 figure a:hover {
   box-shadow: none;
@@ -194,11 +206,21 @@ figure a:hover .thumbnail {
           transition: opacity 0.25s ease-in-out;
 }
 
-figcaption {
+figcaption,
+figcaption a {
   margin-top: 8px;
   font-size: 14px;
   line-height: 1.285714286;
   color: rgba(0, 0, 0, 0.48);
+}
+
+figcaption a {
+  text-decoration: underline;
+  text-shadow: none !important;
+}
+
+figcaption a:hover {
+  text-decoration: none !important;
 }
 
 @media all and (max-width: 639px) {
@@ -241,6 +263,7 @@ section ul {
 .article-meta {
   display: inline-block;
   margin-top: 8px;
+  margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.1666666667;
   font-weight: 600;
@@ -291,7 +314,7 @@ h2 {
   font-size: 20px;
   line-height: 1.4;
   font-weight: 500;
-  padding-top: 96px;
+  padding-top: 72px;
   margin-bottom: 24px;
 }
 
@@ -397,10 +420,6 @@ h2 > a {
 
 .wrapper > p {
   display: inline-block;
-}
-
-p ~ .wrapper {
-  margin-top: 24px;
 }
 
 .green a {
