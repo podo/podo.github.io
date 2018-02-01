@@ -139,7 +139,7 @@
             <a href="#old_trafi_app">
               <img src="images/trafi/old_trafi_app.png" alt="Old version of Trafi for iOS and Android." />
             </a>
-            <figcaption>Old version of Trafi for iOS and Android.</figcaption>
+            <figcaption>Old versions of Trafi for iOS and Android, with totally different experiences.</figcaption>
           </figure>
 
           <p>After doing tens of user interviews, market and competitors research, BI analysis and several product ideations, I’ve managed to define several crucial areas to tackle:</p>
@@ -170,6 +170,13 @@
         <h2 id="design_system">Design System</h2>
 
         <p>As most of the information entities were already built around unique components (stop, schedule, track, vehicle), the next step was to build a design system, which would allow me quickly iterate on recomposition and improvements of remaining screens and flows.</p>
+
+        <!-- <figure class="figure--medium">
+          <a href="#entities_with_contexts">
+            <img class="thumbnail image--medium" src="images/trafi/entities_with_contexts.png" alt="Basic information entities with different contexts — Schedule, Stop and Time"/>
+          </a>
+          <figcaption>Basic information entities with different contexts — Schedule, Stop and Time.</figcaption>
+        </figure> -->
 
         <p>I’ve started with an audit of current screens and UI elements by fleshing out variations of atoms and molecules. It helped me to understand what kind of constrains the design system should have — sizes of texts and icons, colors palette, the exact list of components and their properties.</p>
 
@@ -203,13 +210,30 @@
 
         <p>Once the basic components were ready, I was able to start working on improvements to the remaining screens and flow itself, while in parallel, adding needed components into our design system.</p>
 
-        <p>In Stop screen, I’ve separated transportation by type, as in single list most frequent transportation type often overwhelmed remaining ones. Also, instead of just listing upcoming schedules repeatedly (that’s how most schedule screens usually work), I’ve grouped them by specific track and sorted by time. Users were able to see the list of all possible tracks, not only the several upcoming ones.</p>
+        <span class="wrapper wrapper--big">
 
-        <p>Specific Track screen now included simplified direction toggle, as fifty percent of the time users needed to change it. I’ve also redesigned track line with all possible stops along its way, and the one user is nearest to.</p>
+          <p>In Stop screen, I’ve separated transportation by type, as in single list most frequent transportation type often overwhelmed remaining ones. Also, instead of just listing upcoming schedules repeatedly (that’s how most schedule screens usually work), I’ve grouped them by specific track and sorted by time. Users were able to see the list of all possible tracks, not only the several upcoming ones.</p>
 
-        <p>Instead of having times table, which doesn’t work with a combination of frequencies or specific times, I've designed a regular list with a separate part dedicated for upcoming times. It meant that each row could now contain additional information such as direction or onboard facilities.</p>
+          <figure>
+            <a href="#times_header_exploration">
+              <img src="images/trafi/times_header_exploration.png" alt="Exploration of different headers with transport colors, icons and long names."/>
+            </a>
+            <figcaption>Exploration of different headers with transport colors, icons and long names.</figcaption>
+          </figure>
+
+          <p>Instead of having times table, which doesn’t work with a combination of frequencies or specific times, I've designed a regular list with a separate part dedicated for upcoming times. It meant that each row could now contain additional information such as direction or onboard facilities.</p>
+
+          <p>Specific Track screen now included simplified direction toggle, as fifty percent of the time users needed to change it. I’ve also redesigned track line with all possible stops along its way, and the one user is nearest to.</p>
+        </span>
 
         <p>I’ve also improved transport list and search — results were now grouped by transport type.</p>
+
+        <figure>
+          <a href="#flow">
+            <img class="thumbnail" src="images/trafi/flow.png" alt="Mains screens of schedules flow — Home, Transport List, Nearby Stops, Track, Stop, Times and Run."/>
+          </a>
+          <figcaption>Mains screens of schedules flow — Home, Transport List, Track, Stop, Times and Run.</figcaption>
+        </figure>
 
         <p>Even though we knew, that it will take some time until all screens will be consistent, we've rolled out updates of these screens separately. It was easier to test, measure the impact and fix if something went wrong.</p>
       </section>
@@ -242,12 +266,19 @@
 
         <figure class="figure--medium">
           <a href="#onboarding_sketches">
-            <img class="thumbnail" src="images/trafi/onboarding_sketches.png" alt="Part of my sketches for different types of onboardings."/>
+            <img class="thumbnail image--medium" src="images/trafi/onboarding_sketches.png" alt="Part of my sketches for different types of onboardings."/>
           </a>
           <figcaption>Part of my sketches for different types of onboardings.<figcaption>
         </figure>
 
         <p>Unfortunately, as we looked at the data, first-time onboarding wasn’t improving our core metrics and there was a reason for that — most of our new users already knew what Trafi is.</p>
+
+        <figure>
+          <a href="#final_onboarding">
+            <img class="thumbnail" src="images/trafi/final_onboarding.png" alt="Final version of first-time onboarding with new branding."/>
+          </a>
+          <figcaption>Final version of first-time onboarding with new branding.</figcaption>
+        </figure>
         
         <p>On the other hand, introductory onboarding showed some promising results — we expected big drop of NPS score after roll-out of Home screen, but it didn’t happen.</p>
         
@@ -478,8 +509,20 @@
           <img src="images/trafi/onboarding_sketches.png" alt="Part of my sketches for different types of onboardings."/>
         </a>
 
+        <a href="#_" class="lightbox" id="final_onboarding">
+          <img class="thumbnail" src="images/trafi/final_onboarding.png" alt="Final version of first-time onboarding with new branding."/>
+        </a>
+
         <a href="#_" class="lightbox" id="information_architecture">
           <img src="images/trafi/information_architecture.png" alt="Trafi application information architecture and information flow."/>
+        </a>
+
+        <!-- <a href="#_" class="lightbox" id="entities_with_contexts">
+          <img src="images/trafi/entities_with_contexts.png" alt="Basic information entities with different contexts — Schedule, Stop and Time."/>
+        </a> -->
+
+        <a href="#_" class="lightbox" id="times_header_exploration">
+          <img src="images/trafi/times_header_exploration.png" alt="Exploration of different headers with transport colors, icons and long names."/>
         </a>
 
         <a href="#_" class="lightbox" id="desktop_web">
@@ -488,6 +531,10 @@
 
         <a href="#_" class="lightbox" id="competitors_color_wheel">
           <img src="images/trafi/competitors_color_wheel.png" alt="Competitors plotted on a colour wheel."/>
+        </a>
+
+        <a href="#_" class="lightbox" id="flow">
+          <img class="thumbnail" src="images/trafi/flow.png" alt="Mains screens of schedules flow — Home, Transport List, Nearby Stops, Track, Stop, Times and Run."/>
         </a>
 
         <a href="#_" class="lightbox" id="branding_presentation_1">
