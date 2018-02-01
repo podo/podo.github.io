@@ -122,8 +122,7 @@
       <section>
         <h2 id="research">Research & Analysis</h2>
 
-        <p>From day one I understood, that in order to get the grasp of the complexity I’m dealing with, I needed to map the information
-        architecture of our product, as it heavily implies the hierarchy of the screens, but not necessarily the mental models of our users.</p>
+        <p>From day one I understood, that in order to get the grasp of the complexity I’m dealing with, I needed to map the information architecture of our product, as it heavily implies the hierarchy of the screens, but not necessarily the mental models of our users.</p>
 
         <figure>
           <a href="#information_architecture">
@@ -133,9 +132,7 @@
           <figcaption>Trafi application information architecture and information flow.</figcaption>
         </figure>
 
-        <p>I’ve also had to identify already existing user problems and for that, we’ve started conducting bi-weekly remote user research.
-        But as it wasn’t showing great results, we decided to do some field studies — travel to our new markets in Jakarta, Bangalore,
-        Delhi, Mumbai, and Pune.</p>
+        <p>I also had to identify already existing user problems. For that, we’ve started conducting weekly interviews with users and decided to do some field studies — travel to our new markets in Jakarta, Bangalore, Delhi, Mumbai, and Pune.</p>
         
         <span class="wrapper wrapper--big">
           <figure>
@@ -145,27 +142,28 @@
             <figcaption>Old version of Trafi for iOS and Android.</figcaption>
           </figure>
 
-          <p>After doing tens of user interviews, market and competitors research, BI analysis and several product ideations, I’ve managed to define several crucial areas to tackle:
+          <p>After doing tens of user interviews, market and competitors research, BI analysis and several product ideations, I’ve managed to define several crucial areas to tackle:</p>
 
-            <ul>
-              <li>Trafi use-cases are separated into two big categories — route search and schedules. In order to expose them and create a more personalized experience, we had to create a gateway screen — Home screen.</li>
-              <li>To adopt UI for specific transportation types, we had to rethink transport lists, track, stop and times screens. In short, redesign a whole flow.</li>
-              <li>Users got lost in the application, as some of the screens looked too similar and identical elements looked differently — we had to create a design system.</li>
-              <li>Web product had to catch up with mobile counterparts in user experience and be optimized for search engines.</li>
-              <li>Trafi didn’t have any branding material or branding strategy — it was crucial to have it for upcoming launches.</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Trafi use-cases are separated into two big categories: route search and schedules. In order to expose them and create a more personalized experience, we had to create a gateway screen.</li>
+            <li>To adopt UI for specific transportation types, we had to rethink transport lists, track, stop and times screens. In short, redesign a whole flow.</li>
+            <li>Users got lost in the application, as some of the screens looked too similar and identical elements looked differently — we had to create a design system.</li>
+            <li>Web product had to catch up with mobile counterparts in user experience and be optimized for search engines.</li>
+            <li>Trafi didn’t have any branding material or branding strategy, so it was crucial to have it for upcoming launches.</li>
+          </ul>
         </span>
 
         <p>
-           This was the list of main issues I’ve decided to focus on, while fixing smaller user experience issues along the way. And, by measuring the NPS rating change per cities, feedback on Google Play Store and iTunes App Store, organic growth, retention or adoption of integrated transport types, we would be able to understand, how well we are succeeding in our mission.
+           This was the list of main issues to focus on, while fixing smaller user experience issues along the way. And, by measuring the NPS rating change per cities, feedback on Google Play Store and iTunes App Store, organic growth, retention or adoption of integrated transport types, we would be able to understand, how well we are succeeding in our mission.
         </p>
       </section>
 
       <section>
         <h2 id="homescreen">New Home Screen</h2>
 
-        <p>...</p>
+        <p>We’ve tested our assumptions by trying different layouts, hierarchy, and grouping, so it took my team nearly 3 months to release the final version of Home screen. But results were better, that we’ve expected — transport types discovery skyrocketed, retention grew and the usage of “Home” and “Work” shortcuts increased.</p>
+
+        <p>This success was a perfect motivation for me to start focusing on remaining problems.</p>
       </section>
 
       <section>
@@ -203,7 +201,17 @@
       <section>
         <h2 id="flow_rework">Rework of the Whole Flow</h2>
 
-        <p>...</p>
+        <p>Once the basic components were ready, I was able to start working on improvements to the remaining screens and flow itself, while in parallel, adding needed components into our design system.</p>
+
+        <p>In Stop screen, I’ve separated transportation by type, as in single list most frequent transportation type often overwhelmed remaining ones. Also, instead of just listing upcoming schedules repeatedly (that’s how most schedule screens usually work), I’ve grouped them by specific track and sorted by time. Users were able to see the list of all possible tracks, not only the several upcoming ones.</p>
+
+        <p>Specific Track screen now included simplified direction toggle, as fifty percent of the time users needed to change it. I’ve also redesigned track line with all possible stops along its way, and the one user is nearest to.</p>
+
+        <p>Instead of having times table, which doesn’t work with a combination of frequencies or specific times, I've designed a regular list with a separate part dedicated for upcoming times. It meant that each row could now contain additional information such as direction or onboard facilities.</p>
+
+        <p>I’ve also improved transport list and search — results were now grouped by transport type.</p>
+
+        <p>Even though we knew, that it will take some time until all screens will be consistent, we've rolled out updates of these screens separately. It was easier to test, measure the impact and fix if something went wrong.</p>
       </section>
 
       <section>
@@ -221,14 +229,13 @@
 
           <p>Apart from that, it was also a good time to rework first-time onboarding — flow where we explain what Trafi is all about, users select the city or/and we ask for location services permissions.</p>
 
-          <p>I’ve sketched several different approaches, but each of them had advantages and drawbacks:
-            <ul>
-              <li><strong>Local-first</strong> — we ask for location services permission or city selection in first two screens, so explanation of Trafi functionalities can be more localised to selected city.  However, asking for permissions before explanation of the service is, rather, tricky.</li>
-              <li><strong>Activation-first</strong> — we allow the location services enabling in explanation screens, however, it would require additional screen explaining, which city we’ve pre-selected.</li>
-              <li><strong>Regular</strong> — explanation first, then asking for location services permissions or city selection, however, we cannot localise it and we need to show, which city we’ve pre-selected.</li>
-            </ul>
-          </p>
+          <p>I’ve sketched several different approaches, but each of them had advantages and drawbacks:</p>
 
+          <ul>
+            <li><strong>Local-first</strong> — we ask for location services permission or city selection in first two screens, so explanation of Trafi functionalities can be more localised to selected city.  However, asking for permissions before explanation of the service is, rather, tricky.</li>
+            <li><strong>Activation-first</strong> — we allow the location services enabling in explanation screens, however, it would require additional screen explaining, which city we’ve pre-selected.</li>
+            <li><strong>Regular</strong> — explanation first, then asking for location services permissions or city selection, however, we cannot localise it and we need to show, which city we’ve pre-selected.</li>
+          </ul>
         </span>
 
         <p>After some iterations and testing, we’ve agreed to move on with third option and release it under A/B test.</p>
@@ -307,7 +314,7 @@
 
           <p>Couple intensive months of collaborative work between the studios, our branding team (Head of Brand, Head of Product and Myself) and co-founders of Trafi, and we’ve received final version of Trafi styleguide and brand strategy material — new logo representing the movement, bold but very unique color palette, new typeface pair, art direction examples, brand pillars and our new slogan — “Own your city”.</p>
 
-          <p>I’ve used all this material to produce final visuals for apps, web, company swag, outdoor and online marketing:</p>
+          <p>I’ve used all this material to produce final visuals for apps, web, email, outdoor marketing, social media and print:</p>
         </span>
   
         <figure>
