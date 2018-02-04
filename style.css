@@ -126,6 +126,10 @@ blockquote {
   font-style: italic;
 }
 
+blockquote:not(:last-child) {
+  margin: 24px 0 48px;
+}
+
 @media all and (max-width: 639px) {
   blockquote {
     font-size: 20px;
