@@ -37,9 +37,41 @@
 
       <section>
         <h2 id="safety_trust">Safety & Trust</h2>
-          <p>Feedback Improvements</p>
-          <p>Identity Verification</p>
-          <p>Profile Update</p>
+          <p>Safety and trust are one of the key elements for successful community-driven marketplace. We believed that by improving these aspects we will be able to bring more users to our platform and, more importantly, help them sell their unused clothes.</p>
+
+          <p>As I’ve started doing research, I understood, that fraud and cheat cases at Vinted were truly rare — mostly resolved by other projects I’ve worked on (3D verification, improvements in feed, etc). But, due to complicated representation of user rating and feedback, it wasn’t that obvious.</p>
+
+          <figure class="figure--medium">
+            <a href="#rating_improvements">
+              <img class="thumb image--medium" src="images/vinted/rating_improvements.png" alt="Simplification of member rating display."/>
+            </a>
+          
+            <figcaption>Simplification of member rating display.</figcaption>
+          </figure>
+
+          <p>So I’ve changed how ratings are being calculated and displayed:</p>
+
+          <ul>
+            <li><strong>Removed sales count</strong> as sales without reviews were not truly valuable.</li>
+            <li><strong>Removed legacy positive/negative feedbacks count</strong> as it only confused our users.</li>
+            <li><strong>Updated rating calculation rules</strong> for more precise reflection of members feedbacks.</li>
+          </ul>
+
+          <p>I’ve also had to updated feedback leaving flow itself — due to legacy feedback system, users were leaving positive/neutral/negative feedback, which in the process was converted to five-star rating. Also, they didn’t needed to make a sale in order to get a review — community forums and clothes sales feedbacks were the same.</p>
+
+          <p>New feedback flow contained same five-star rating with clear names. Also, a possibility to sort feedbacks by most recent or most helpful. I've also improved transaction flow: added notification reminders about feedbacks that needs to be left, added feedback timer, which would leave automatic feedback once expired, and decided to display feedbacks in profile only when both sides (buyer and seller) left them.</p>
+
+          <p>I was aware, that feedback changes will cause a major discussion in our community, so we had to prepare extensive communication as well.</p>
+
+          <p>Feedback display improvements were major success for our top members with a lot of feedbacks, but not for our new members with no feedback at all. Having that in mind, I've decided to rethink how </p>
+
+          <figure class="figure--medium">
+            <a href="#profile_examples">
+              <img class="thumb image--medium" src="images/vinted/profile_examples.png" alt="Final version of new Vinted profile with feedback rating and verifications."/>
+            </a>
+          
+            <figcaption>Final version of new Vinted profile with feedback rating and verifications.</figcaption>
+          </figure>
       </section>
 
       <section>
@@ -69,8 +101,8 @@
                 <img class="thumb" src="images/vinted/design_system_landing.png" alt="Vinted Design System — ui.vinted.net" />
               </a>
 
-              <figcaption>Vinted Design System —
-                <a href="http://ui.trafi.com" target="_blank">ui.trafi.com</a>
+              <figcaption>
+                Vinted Design System — <a href="http://ui.vinted.net" target="_blank">ui.vinted.net</a>
               </figcaption>
             </figure>
 
@@ -88,6 +120,14 @@
 
           <p>The components were separated into three groups — atoms, molecules, and organisms (based on Atomic Design principles). They had specific properties, which defined variations, and shared same primitives — color themes and styles.</p>
 
+          <figure>
+            <a href="#cell_component_variations">
+              <img class="thumb" src="images/vinted/cell_component_variations.png" alt="Redesigned cell component variations across all Vinted products." />
+            </a>
+          
+            <figcaption>Redesigned cell component variations across all Vinted products.</figcaption>
+          </figure>
+
           <p>It took me nearly two months and a help from several designers to finish it, but results were amazing — designers started
           spending less time drawing pixels, which led to more focus on user experience and developers started to speak the same language,
           which led to more focus on quality and consistency.</p>
@@ -97,7 +137,7 @@
         <h2 id="mobile_ads">Mobile Ads</h2>
           <p>From early days, web advertising was one of the main revenue sources for Vinted. Even though we’ve introduced seller or buyer fees and added premium services, it was crucial for us to explore possible alternatives such as mobile advertising.</p>
 
-          <p>At first, I was skeptical, as creating and maintaining good experience in a marketplace with user-generated content is already difficult, but adding ads means, that we need to focus on advertisers content as well. However, I’ve accepted the challenge, because I’ve seen good examples such as Facebook, Instagram, and Twitter.</p>
+          <p>At first, I was skeptical, as creating and maintaining good experience in a marketplace with user-generated content is already difficult, but adding ads meant, that we need to focus on advertisers content as well. However, I’ve accepted the challenge, because I’ve seen good examples such as Facebook, Instagram, and Twitter.</p>
 
           <p>I knew, that for the first iteration we won’t put much focus on the personalization of the ads — we needed to prove that
           integration of third-party advertisement providers actually works. So, my mission was pretty clear — find the best ways of
@@ -107,6 +147,14 @@
           <p>After discovery and exploration phase, I came with the conclusion, that the most natural form for our mobile ads would be
           item card — element, which we use to show sellers items, as it would blend into content across feed, catalog, and member
           profile. On top of that, we could have an additional section for ads in our personalized editorial screen.</p>
+
+          <figure>
+            <a href="#mobile_ads_variations">
+              <img class="thumb" src="images/vinted/mobile_ads_variations.png" alt="Exploration of types and formats for mobile ads."/>
+            </a>
+          
+            <figcaption>Exploration of types and formats for mobile ads.</figcaption>
+          </figure>
 
           <p>I came up with several different types and formats of ads, which could be adopted for different advertisers and displayed
           in different pages — only with title and image, with playable video, double-column, single-column and square variations.</p>
@@ -119,8 +167,7 @@
             <figcaption>Single and multi-column ads in Vinted apps.</figcaption>
           </figure>
 
-          <p>We took some time to test different approaches and display frequencies, but most of the approaches worked — in couple months
-          mobile ads revenue started climbing, but NPS and app usage metrics remained strong.</p>
+          <p>We took some time to test different approaches and display frequencies, but most of the approaches worked — in couple months mobile ads revenue started climbing, but NPS and app usage metrics remained strong.</p>
       </section>
 
       <section>
@@ -136,6 +183,22 @@
 
         <a href="#_" class="lightbox" id="mobile_ads_thumb">
           <img src="images/vinted/mobile_ads_thumb.png" alt="Single and multi-column ads in Vinted apps." />
+        </a>
+
+        <a href="#_" class="lightbox" id="mobile_ads_variations">
+          <img src="images/vinted/mobile_ads_variations.png" alt="Exploration of types and formats for mobile ads."/>
+        </a>
+
+        <a href="#_" class="lightbox" id="cell_component_variations">
+          <img class="thumb" src="images/vinted/cell_component_variations.png" alt="Redesigned cell component variations across all Vinted products." />
+        </a>
+
+        <a href="#_" class="lightbox" id="rating_improvements">
+          <img class="thumb" src="images/vinted/rating_improvements.png" alt="Simplification of member rating display."/>
+        </a>
+
+        <a href="#_" class="lightbox" id="profile_examples">
+          <img class="thumb" src="images/vinted/profile_examples.png" alt="Final version of new Vinted profile with feedback rating and verifications."/>
         </a>
       </div>
     </article>
