@@ -226,7 +226,7 @@ figure a .thumbnail {
 }
 
 figure a:hover .thumbnail {
-  opacity: 0.48;
+  opacity: 0.72;
   -webkit-transition: opacity 0.25s ease-in-out;
      -moz-transition: opacity 0.25s ease-in-out;
       -ms-transition: opacity 0.25s ease-in-out;
