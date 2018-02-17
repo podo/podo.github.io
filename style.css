@@ -68,16 +68,16 @@ body.dark_green {
   background-color: #D5DBCD;
 }
 
-body.blue {
+body.jet_stream {
   background-color: #BDD7D6;
 }
 
-body.purple {
-  background-color: #DCDEED;
+body.akaroa {
+  background-color: #DBCEAE;
 }
 
-body.pink {
-  background-color: #FFF6F7;
+body.celeste {
+  background-color: #D2D3CB;
 }
 
 body.brown {
@@ -90,6 +90,18 @@ body.grey {
 
 body.dark_grey {
   background-color: #D2CFCD;
+}
+
+body.tea {
+  background-color: #D4CDC8;
+}
+
+body.white_rock {
+  background-color: #ECEBD9;
+}
+
+body.timberwolf {
+  background-color: #D6D2CF;
 }
 
 body.trafi {
@@ -462,7 +474,7 @@ h2 > a {
                2px 3px #D5DBCD;
 }
 
-.blue a {
+.jet_stream a {
   text-shadow: 0px 3px #BDD7D6,
               -1px 3px #BDD7D6,
               -2px 3px #BDD7D6,
@@ -470,20 +482,20 @@ h2 > a {
                2px 3px #BDD7D6;
 }
 
-.purple a {
-  text-shadow: 0px 3px #DCDEED,
-              -1px 3px #DCDEED,
-              -2px 3px #DCDEED,
-               1px 3px #DCDEED,
-               2px 3px #DCDEED;
+.akaroa a {
+  text-shadow: 0px 3px #DBCEAE,
+              -1px 3px #DBCEAE,
+              -2px 3px #DBCEAE,
+               1px 3px #DBCEAE,
+               2px 3px #DBCEAE;
 }
 
-.pink a {
-  text-shadow: 0px 3px #FFF6F7,
-              -1px 3px #FFF6F7,
-              -2px 3px #FFF6F7,
-               1px 3px #FFF6F7,
-               2px 3px #FFF6F7;
+.celeste a {
+  text-shadow: 0px 3px #D2D3CB,
+              -1px 3px #D2D3CB,
+              -2px 3px #D2D3CB,
+               1px 3px #D2D3CB,
+               2px 3px #D2D3CB;
 }
 
 .brown a {
@@ -508,6 +520,30 @@ h2 > a {
               -2px 3px #D2CFCD,
                1px 3px #D2CFCD,
                2px 3px #D2CFCD;
+}
+
+.tea a {
+  text-shadow: 0px 3px #D4CDC8,
+              -1px 3px #D4CDC8,
+              -2px 3px #D4CDC8,
+               1px 3px #D4CDC8,
+               2px 3px #D4CDC8;
+}
+
+.white_rock a {
+  text-shadow: 0px 3px #ECEBD9,
+              -1px 3px #ECEBD9,
+              -2px 3px #ECEBD9,
+               1px 3px #ECEBD9,
+               2px 3px #ECEBD9;
+}
+
+.timberwolf a {
+  text-shadow: 0px 3px #D6D2CF,
+              -1px 3px #D6D2CF,
+              -2px 3px #D6D2CF,
+               1px 3px #D6D2CF,
+               2px 3px #D6D2CF;
 }
 
 .trafi a {
