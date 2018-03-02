@@ -27,15 +27,55 @@
         I'm always looking for interesting projects, collaborations and meaningful conversations, so drop me <a href="mailto:g.jaloveckas@gmail.com" target="_blank">an e-mail<span class="tooltip">g.jaloveckas@gmail.com</span></a> or <a href="http://www.twitter.com/podo" target="_blank">a tweet<span class="tooltip">twitter.com/podo</span></a>.
       </p>
     </article>
-    
+
+    <div class="cursor"></div>
+
     <footer>
       Copyright — 2018
     </footer>
     <script>
       var tooltip = document.querySelectorAll('.tooltip');
       var classes = ['green', 'dark_green', 'jet_stream', 'akaroa', 'celeste', 'grey', 'dark_grey', 'tea', 'white_rock', 'timberwolf'];
+      var follower, init, mouseX, mouseY, positionElement, timer;
 
       document.addEventListener('mousemove', fn, false);
+      follower = document.getElementsByClassName('cursor')[0]
+
+      mouseX = function(event) {
+        return event.clientX
+      }
+
+      mouseY = function(event) {
+        return event.clientY
+      }
+
+      positionElement = function(event) {
+        mouse = {
+          x: mouseX(event),
+          y: mouseY(event)
+        }
+
+        follower.style.top = mouse.y + 'px'
+        follower.style.left = mouse.x + 'px'
+      }
+
+      timer = false;
+
+      window.onmousemove = init = function(event) {
+        var _event;
+        _event = event;
+        return timer = setTimeout(() => {
+          return positionElement(_event);
+        }, 1);
+      };
+
+      window.onmousedown = function(event) {
+        follower.classList.toggle("is-hover");
+      }
+
+      window.onmouseup = function(event) {
+        follower.classList.toggle("is-hover");
+      }      
 
       function fn(event) {
         for (var i = tooltip.length; i--;) {
