@@ -26,6 +26,24 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+        -ms-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+        -ms-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -69,11 +87,15 @@ body.cyan {
 }
 
 body.pink {
-  background-color: #C0A4CC;
+  background-color: #B24E87;
 }
 
 body.brown {
   background-color: #80673F;
+}
+
+body.purple {
+  background-color: #594BFA;
 }
 
 @media all and (max-width: 639px) {
@@ -220,6 +242,7 @@ a {
   border-radius: 99999px;
   background-color: rgba(72, 35, 18, 1);
   margin-left: 5px;
+  cursor: pointer;
 }
 
 @media all and (max-width: 639px) {
@@ -229,27 +252,49 @@ a {
   }
 }
 
-/* .cover svg {
-  opacity: 0;
-  visibility: hidden;
+.cover path {
+  display: none;
+}
+
+.cover svg {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
   background-color: rgba(72, 35, 18, 1);
   border-radius: 99999px;
-  -webkit-transition: all 0.5s ease-in-out;
-     -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-       -o-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+     -moz-transition: all 0.25s ease-in-out;
+      -ms-transition: all 0.25s ease-in-out;
+       -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
 }
 
 .cover:hover svg {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all 0.5s ease-in-out 1s;
-     -moz-transition: all 0.5s ease-in-out 1s;
-      -ms-transition: all 0.5s ease-in-out 1s;
-       -o-transition: all 0.5s ease-in-out 1s;
-          transition: all 0.5s ease-in-out 1s;
-} */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: rotate 2s linear infinite;
+     -moz-animation: rotate 2s linear infinite;
+       -o-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  -webkit-transition: all 0.25s ease-in-out 3s;
+     -moz-transition: all 0.25s ease-in-out 3s;
+      -ms-transition: all 0.25s ease-in-out 3s;
+       -o-transition: all 0.25s ease-in-out 3s;
+          transition: all 0.25s ease-in-out 3s;
+}
+
+.yellow path.yellow, .orange path.orange {
+  display: initial;
+}
+
+.cyan path.cyan, .purple path.purple {
+  display: initial;
+}
+
+.pink path.pink, .brown path.brown {
+  display: initial;
+}
 
 .yellow .cover {
   background-image: url('images/photo-yellow.png');
@@ -269,6 +314,10 @@ a {
 
 .brown .cover {
   background-image: url('images/photo-brown.png');
+}
+
+.purple .cover {
+  background-image: url('images/photo-purple.png');
 }
 
 .yellow a {
@@ -296,11 +345,11 @@ a {
 }
 
 .pink a {
-  text-shadow: 0px 3px #C0A4CC,
-              -1px 3px #C0A4CC,
-              -2px 3px #C0A4CC,
-               1px 3px #C0A4CC,
-               2px 3px #C0A4CC;
+  text-shadow: 0px 3px #B24E87,
+              -1px 3px #B24E87,
+              -2px 3px #B24E87,
+               1px 3px #B24E87,
+               2px 3px #B24E87;
 }
 
 .brown a {
@@ -309,6 +358,14 @@ a {
               -2px 3px #80673F,
                1px 3px #80673F,
                2px 3px #80673F;
+}
+
+.purple a {
+  text-shadow: 0px 3px #594BFA,
+              -1px 3px #594BFA,
+              -2px 3px #594BFA,
+               1px 3px #594BFA,
+               2px 3px #594BFA;
 }
 
 a:hover{
