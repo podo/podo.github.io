@@ -148,6 +148,10 @@ p:last-child {
   margin-block-end: 0px;
 }
 
+strong {
+  font-family: 'Aeonik Fono Medium';
+}
+
 hr {
   padding: 0;
   margin: 25px 0;
@@ -193,7 +197,6 @@ footer {
   line-height: 1.1666666667;
   color: rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
-  letter-spacing: 0.25;
   -webkit-animation: fadeIn 1.25s both 1s;
      -moz-animation: fadeIn 1.25s both 1s;
        -o-animation: fadeIn 1.25s both 1s;
