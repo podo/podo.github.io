@@ -197,6 +197,8 @@ footer {
   line-height: 1.1666666667;
   color: rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
   -webkit-animation: fadeIn 1.25s both 1s;
      -moz-animation: fadeIn 1.25s both 1s;
        -o-animation: fadeIn 1.25s both 1s;
