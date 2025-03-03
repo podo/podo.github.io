@@ -217,10 +217,13 @@ footer section {
 
   footer a {
     margin-bottom: 15px;
+    margin-right: 10px;
   }
 }
 
 footer a {
+  display: inline-block;
+  margin-right: 15px;
   font-size: 12px;
   line-height: 1.25;
   text-transform: none;
