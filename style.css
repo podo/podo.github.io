@@ -272,8 +272,9 @@ a {
 }
 
 .cover {
+  float: right;
   flex-grow: 0;
-	flex-shrink: 0;
+  flex-shrink: 0;
   width: 46px;
   height: 46px;
   background-size: cover;
